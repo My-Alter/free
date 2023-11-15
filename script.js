@@ -88,5 +88,12 @@ b /= 4; // аналог b = b / 4;
 c /= 11; // аналог c = c / 11;
 
 // Экранирование кавычек в строках
-const myStr = 'I am a "double quoted" string inside "double quotes".';
-console.log(myStr);
+const mySTr = 'I am a "double quoted" string inside "double quotes".';
+console.log(mySTr);
+
+// Заключение строк в одинарные кавычки
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+/*
+замена внешних двойных кавычек на однарные, позволяет избавиться от экранирующего обратного слеша (\)
+*/
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
