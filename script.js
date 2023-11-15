@@ -118,3 +118,7 @@ const myStr = "This is the start. " + "This is the end.";
 // Объединение строк с помощью оператора "+="
 let myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
+
+// Создание строк с помощью переменных
+const myName = "Mihey";
+const myStr = "My name is " + myName + "and I am well!";
