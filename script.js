@@ -122,3 +122,9 @@ myStr += "This is the second sentence.";
 // Создание строк с помощью переменных
 const myName = "Mihey";
 const myStr = "My name is " + myName + "and I am well!";
+
+// Добавление строк в качестве переменных к строкам
+
+const someAdjective = "very hard";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
