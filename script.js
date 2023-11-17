@@ -128,3 +128,11 @@ const myStr = "My name is " + myName + "and I am well!";
 const someAdjective = "very hard";
 let myStr = "Learning to code is ";
 myStr += someAdjective;
+
+// Поиск длины строки
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+lastNameLength = lastName;
+console.log(lastNameLength.length);
+console.log(lastName.length);
