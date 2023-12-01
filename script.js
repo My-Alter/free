@@ -170,3 +170,18 @@ const LastLetter = FirstName[firstName.length - 1]; // LastLetter будет и�
 */
 const lastName = "Lovelace";
 const lastLetterOfLastName = lastName[lastName.length - 1];
+
+// Используйте обозначение скобок, чтобы найти символ от N-го до последнего в строке
+/*
+Например, вы можете получить значение предпредпоследней буквы строки const firstName = "Augusta", используя firstName[firstName.length - 3]
+
+Пример:
+
+const firstName = "Augusta";
+const ThirdToLastLetter = FirstName[firstName.length - 3]; // ThirdToLastLetter будет иметь значение строки "s".
+*/
+const lastName = "Lovelace";
+
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // покажет предпоследний символ в строке
+
+// Заготовки слов
