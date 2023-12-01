@@ -185,3 +185,10 @@ const lastName = "Lovelace";
 const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // покажет предпоследний символ в строке
 
 // Заготовки слов
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+const wordBlanks =
+	myNoun + " " + " " + myAdjective + " " + myVerb + " " + myAdverb;
