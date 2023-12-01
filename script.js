@@ -123,16 +123,18 @@ myStr += "This is the second sentence.";
 const myName = "Mihey";
 const myStr = "My name is " + myName + "and I am well!";
 
-// Добавление строк в качестве переменных к строкам
-
-const someAdjective = "very hard";
-let myStr = "Learning to code is ";
-myStr += someAdjective;
-
-// Поиск длины строки
+// Найти длину строки
 let lastNameLength = 0;
 const lastName = "Lovelace";
 
-lastNameLength = lastName;
-console.log(lastNameLength.length);
-console.log(lastName.length);
+lastNameLength = lastName.length;
+
+// Используйте скобочные обозначения, чтобы найти первый символ в строке
+// Скобочная нотация — это способ получить символ по определенному индексу в строке. Большинство современных языков программирования, не начинают счет с 1. Они начинаются с 0. Это называется индексацией с нуля.
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // выводит первый знак (буква "L") в переменной (lastName)
+
+// Понимание неизменяемости строк
