@@ -155,8 +155,18 @@ myStr[0] = "H"; // при таком изменениии, значение вы
 myStr = "Hello World"; // при полном изменении переменной, происходит изменение значения
 
 // Используйте скобочные обозначения, чтобы найти N-й символ в строке
-// Setup
 const lastName = "Lovelace";
+const thirdLetterOfLastName = lastName[2]; // показывает третий символ ("v") в строке ("Lovelace")
 
-// Only change code below this line
-const thirdLetterOfLastName = lastName[2]; // Change this line
+// Используйте скобочные обозначения, чтобы найти последний символ в строке
+/*
+Чтобы получить последнюю букву строки, нужно вычесть единицу из длины строки.
+Например, если const firstName = «Ада», можно получить значение последней буквы строки, используя firstName[firstName.length - 1].
+
+Пример:
+
+const firstName = "Ада";
+const LastLetter = FirstName[firstName.length - 1]; // LastLetter будет иметь значение строки a.
+*/
+const lastName = "Lovelace";
+const lastLetterOfLastName = lastName[lastName.length - 1];
