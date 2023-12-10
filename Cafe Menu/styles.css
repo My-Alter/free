@@ -6,6 +6,7 @@ p {
 
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
 }
 
 .menu {
@@ -13,14 +14,19 @@ body {
   background-color: #deb887;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+h1,
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .flavor,
 .dessert {
   text-align: left;
-  width: 74.46%;
+  width: 74%;
 }
 
 .price {
