@@ -9,6 +9,10 @@ body {
   font-family: sans-serif;
 }
 
+.established {
+  font-style: italic;
+}
+
 .menu {
   width: 80%;
   background-color: #deb887;
