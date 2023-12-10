@@ -22,6 +22,12 @@ body {
   max-width: 500px;
 }
 
+hr {
+  height: 2px;
+  background-color: #7a2a0f;
+  border-color: #7a2a0f;
+}
+
 h1,
 h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
