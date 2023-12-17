@@ -207,7 +207,4 @@ const myArray = ["meat", 12];
 const teams = [["Bulls", 23], ["White Sox", 45]];
 Его еще называют многомерным массивом.
 */
-* fdklmdfklnd; fbn
-// sav,;l,svm
-    * * WebGL2RenderingContext
-* * 
+const myArray = ["djfur", ["djfur", "MIDIAccess"]];
