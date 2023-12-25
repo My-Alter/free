@@ -6,5 +6,8 @@ h1 {
   margin: 10px auto;
   height: 25px;
   width: 200px;
+}
+
+.one {
   background-color: #ff0000;
 }
