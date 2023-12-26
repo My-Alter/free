@@ -13,14 +13,17 @@ h1 {
   width: 200px;
 }
 
+/* построение линейного градиента с помощью цветовой схемы RGB */
 .red {
-  background: linear-gradient(180deg, rgb(122, 74, 14)0%, rgb(245, 62, 113)50%, rgb(162, 27, 27)100%);
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
 }
 
+/* построение линейного градиента с помощью цветовой схемы HEX */
 .green {
-  background-color: rgb(0, 255, 0);
+  background: linear-gradient(#55650d, #71f53e, 116c31);
 }
 
+/* построение линейного градиента с помощью цветовой схемы HSL */
 .blue {
-  background-color: rgb(0, 0, 255);
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
