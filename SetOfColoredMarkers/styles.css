@@ -13,6 +13,22 @@ h1 {
   width: 200px;
 }
 
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 50%);
+}
+
+.cap,
+.sleeve {
+  display: inline-block;
+}
+
 /* построение линейного градиента с помощью цветовой схемы RGB */
 .red {
   background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
