@@ -33,14 +33,17 @@ h1 {
 /* построение линейного градиента с помощью цветовой схемы RGB */
 .red {
   background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
 /* построение линейного градиента с помощью цветовой схемы HEX */
 .green {
-  background: linear-gradient(#55650d, #71f53e, 116c31);
+  background: linear-gradient(#55650d, #71f53e, #116c31);
+  box-shadow: 0 0 20px 0 #3b7e20cc;
 }
 
 /* построение линейного градиента с помощью цветовой схемы HSL */
 .blue {
   background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
