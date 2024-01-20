@@ -24,7 +24,22 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+function goTown(params) {
+	text.innetText = "You are in the town square. You see a sing that says Store.";
+
+	button1.onclick = goStore;
+	button2.onclick = goCave;
+	button3.onclick = fightDragon;
+
+	button1.innerHTML = "Go to store";
+	button2.innerHTML = "Go to cave";
+	button3.innerHTML = "Fight dragon";
+}
+
 function goStore() {
+	// modify display text
+	text.innetText = "You enter the store.";
+
 	// add update for buttons
 	button1.onclick = buyHealth;
 	button2.onclick = buyWeapon;
