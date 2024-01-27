@@ -25,6 +25,16 @@ const locations = [
 		"button functions": [goStore, goCave, fightDragon],
 		text: 'You are in the town square. You see a sign that says "Store".',
 	},
+	{
+		name: "store",
+		"button text": [
+			"Buy 10 health (10 gold)",
+			"Buy weapon (30 gold)",
+			"Go to town square",
+		],
+		"button functions": [buyHealth, buyWeapon, goTown],
+		text: "You enter the store.",
+	},
 ];
 
 // initialize buttons
@@ -33,34 +43,22 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-function update(location) {}
-
-function goTown(params) {
-	text.innetText =
-		'You are in the town square. You see a sing that says "Store".';
-
-	button1.onclick = goStore;
-	button2.onclick = goCave;
-	button3.onclick = fightDragon;
-
+function update(location) {
 	button1.innerHTML = "Go to store";
 	button2.innerHTML = "Go to cave";
 	button3.innerHTML = "Fight dragon";
+	button1.onclick = goStore;
+	button2.onclick = goCave;
+	button3.onclick = fightDragon;
+	text.innetText =
+		'You are in the town square. You see a sing that says "Store".';
 }
 
-function goStore() {
-	button1.innerHTML = "Buy 10 helth (10 gold)";
-	button2.innerHTML = "Buy weapon (30 gold)";
-	button3.innerHTML = "Go to town square";
-
-	// add update for buttons
-	button1.onclick = buyHealth;
-	button2.onclick = buyWeapon;
-	button3.onclick = goTown;
-
-	// modify display text
-	text.innetText = "You enter the store.";
+function goTown() {
+	update();
 }
+
+function goStore() {}
 
 function goCave() {
 	console.log("Going to cave.");
