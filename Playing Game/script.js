@@ -18,14 +18,24 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+const locations = [
+	{
+		name: "town square",
+		"button text": ["Go to store", "Go to cave", "Fight dragon"],
+	},
+];
+
 // initialize buttons
 
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+function update(location) {}
+
 function goTown(params) {
-	text.innetText = "You are in the town square. You see a sing that says Store.";
+	text.innetText =
+		'You are in the town square. You see a sing that says "Store".';
 
 	button1.onclick = goStore;
 	button2.onclick = goCave;
@@ -37,17 +47,17 @@ function goTown(params) {
 }
 
 function goStore() {
-	// modify display text
-	text.innetText = "You enter the store.";
+	button1.innerHTML = "Buy 10 helth (10 gold)";
+	button2.innerHTML = "Buy weapon (30 gold)";
+	button3.innerHTML = "Go to town square";
 
 	// add update for buttons
 	button1.onclick = buyHealth;
 	button2.onclick = buyWeapon;
 	button3.onclick = goTown;
 
-	button1.innerHTML = "Buy 10 helth (10 gold)";
-	button2.innerHTML = "Buy weapon (30 gold)";
-	button3.innerHTML = "Go to town square";
+	// modify display text
+	text.innetText = "You enter the store.";
 }
 
 function goCave() {
