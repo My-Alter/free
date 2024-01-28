@@ -1,6 +1,6 @@
 "use strict";
 
-// продолжить Step 89
+// продолжить Step 111
 
 let xp = 0;
 let health = 100;
@@ -163,3 +163,5 @@ function fightBeast(params) {}
 function fightDragon() {
 	console.log("Fighting dragon.");
 }
+
+function goFight(params) {}
