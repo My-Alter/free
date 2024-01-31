@@ -82,6 +82,12 @@ const locations = [
 		"button functions": [fightSlime, fightBeast, goTown],
 		text: "You enter the cave. You see some monsters.",
 	},
+	{
+		name: "fight",
+		"button text": ["Attack", "Dodge", "Run"],
+		"button function": [attack, dodge, goTown],
+		text: "You are fighting a monster.",
+	},
 ];
 
 // initialize buttons
@@ -113,7 +119,7 @@ function goCave() {
 	update(locations[2]);
 }
 
-function buyHealth(params) {
+function buyHealth() {
 	if (gold >= 10) {
 		gold -= 10;
 		health += 10;
@@ -124,7 +130,7 @@ function buyHealth(params) {
 	}
 }
 
-function buyWeapon(params) {
+function buyWeapon() {
 	if (currentWeapon < weapons.length - 1) {
 		if (gold >= 30) {
 			gold -= 30;
@@ -144,7 +150,7 @@ function buyWeapon(params) {
 	}
 }
 
-function sellWeapon(params) {
+function sellWeapon() {
 	if (inventory.length > 1) {
 		gold += 15;
 		goldText.innerText = gold;
@@ -156,12 +162,27 @@ function sellWeapon(params) {
 	}
 }
 
-function fightSlime(params) {}
-
-function fightBeast(params) {}
-
-function fightDragon() {
-	console.log("Fighting dragon.");
+function fightSlime() {
+	fighting = 0;
+	goFight();
 }
 
-function goFight(params) {}
+function fightBeast() {
+	fighting = 1;
+	goFight();
+}
+
+function fightDragon() {
+	fighting = 2;
+	goFight();
+}
+
+function goFight() {}
+
+function attack(params) {
+	0;
+}
+
+function dodge(params) {
+	name;
+}
