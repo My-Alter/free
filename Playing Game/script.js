@@ -1,6 +1,6 @@
 "use strict";
 
-// продолжить Step 111
+// продолжить Step 118
 
 let xp = 0;
 let health = 100;
@@ -177,12 +177,21 @@ function fightDragon() {
 	goFight();
 }
 
-function goFight() {}
-
-function attack(params) {
-	0;
+function goFight() {
+	update(locations[3]);
+	monsterHealth = monsters[fighting].health;
+	monsterStats.style.display = "block";
+	monsterName.innerText = monsters[fighting].name;
+	monsterHealthText.innerText = monsters[fighting].health;
 }
 
-function dodge(params) {
-	name;
+function attack() {
+	update(locations[3]);
+	text.innerText = "The " + monsters[fighting].name + " attacks.";
+	text.innerText +=
+		" You attack it with your " + weapons[currentWeapon].name + ".";
+	health -= monsters[fighting].level;
+	monsterHealth -= weapons[currentWeapon].power;
 }
+
+function dodge() {}
