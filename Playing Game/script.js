@@ -1,7 +1,5 @@
 "use strict";
 
-// продолжить Step 123
-
 let xp = 0;
 let health = 100;
 let gold = 50;
@@ -134,8 +132,7 @@ function update(location) {
 	button1.onclick = location["button functions"][0];
 	button2.onclick = location["button functions"][1];
 	button3.onclick = location["button functions"][2];
-	text.innetText =
-		'You are in the town square. You see a sing that says "Store".';
+	text.innerHTML = location.text;
 }
 
 function goTown() {
