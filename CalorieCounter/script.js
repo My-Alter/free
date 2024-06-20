@@ -30,7 +30,15 @@ function addEntry() {
 		<label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
 		<input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories">
 	`;
-	targetInputContainer.insertAdjacentElement();
+	targetInputContainer.insertAdjacentElement("beforeend", HTMLString);
+}
+
+function getCaloriesFromInputs(list) {
+	let calories = 0;
+	for (const item of list) {
+		const currVal = cleanInputString(item.value);
+		const invalidInputMatch = isInvalidInput(currVal);
+	}
 }
 
 addEntryButton.addEventListener("click", addEntry);
